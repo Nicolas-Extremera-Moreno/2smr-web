@@ -1,0 +1,77 @@
+/* -------------------------------------------------------
+   1. SELECTORES BÁSICOS: Etiqueta, Clase e ID
+   ------------------------------------------------------- */
+
+/* TAREA 1.1: Selector de Etiqueta
+   Aplica un color de fondo gris claro (#f4f4f4) al elemento <body>. */
+body {
+   background-color: #f4f4f4;
+}
+
+/* TAREA 1.2: Selector de Identificador (ID)
+   Aplica un ancho máximo (max-width) de 960px y un margen automático (margin: auto) 
+   al elemento con el ID "contenedor-principal". Esto centrará el contenido. */
+#contenedor-principal {
+   max-width: 960px;
+   margin: auto;
+}
+
+/* TAREA 1.3: Selector de Clase
+   Aplica un color de texto azul oscuro (#0056b3) y pon la fuente en negrita (font-weight: bold) 
+   a todos los elementos con la clase "parrafo-importante". */
+.parrafo-importante {
+   color: #0056b3;
+   font-weight: bold;
+}
+
+/* TAREA 1.4: Selector de Etiqueta para todos los encabezados H2
+   Aplica un margen inferior de 15px y un color de texto oscuro (#333) a todos los H2. */
+h2 {
+   margin-bottom: 15px;
+   color: #333;
+}
+
+/* -------------------------------------------------------
+   2. SELECTORES DE AGRUPACIÓN Y DESCENDIENTES
+   ------------------------------------------------------- */
+
+/* TAREA 2.1: Selector de Agrupación
+   Aplica un color de fuente naranja (#e67e22) a los elementos <h1> y .subtitulo. 
+   (Deben ir en la misma regla CSS). */
+h1 .subtitulo {
+   color: #e67e22;
+}
+
+/* TAREA 2.2: Selector Descendente
+   Dentro de la sección destacada (.seccion-destacada), selecciona todos los elementos 
+   de lista <li> y quítales los puntos (list-style: none). */
+
+
+/* -------------------------------------------------------
+   3. SELECTORES DE RELACIÓN (HIJO DIRECTO)
+   ------------------------------------------------------- */
+
+/* TAREA 3.1: Selector de Hijo Directo (>)
+   Dentro del div con ID "caja-ejemplo", selecciona ÚNICAMENTE los párrafos <p> que sean 
+   hijos directos.
+   Aplica un borde de 1px sólido de color verde (#27ae60) solo a esos párrafos.
+   NOTA: El párrafo dentro de <article> no debería tener borde. */
+
+
+/* -------------------------------------------------------
+   4. SELECTORES AVANZADOS (Atributo, Pseudo-clase)
+   ------------------------------------------------------- */
+
+/* TAREA 4.1: Pseudo-Clase :hover
+   Selecciona todos los enlaces <a> y cambia su color de texto a rojo (#e74c3c) cuando 
+   el ratón pase por encima (:hover). */
+
+
+/* TAREA 4.2: Selectores de Atributo (OPCIONAL/AVANZADO)
+   Selecciona el enlace <a> que NO tenga la clase "enlace-secundario" y aplica un padding 
+   de 5px y un color de fondo gris claro (#ddd). */
+
+
+/* TAREA 4.3: Selector Combinado (Etiqueta + Clase)
+   Selecciona el elemento <li> que tiene la clase "item-especial" y ponle un color de fondo 
+   amarillo claro (#fffacd). */
