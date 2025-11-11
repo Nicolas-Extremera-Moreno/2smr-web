@@ -83,3 +83,6 @@ a:hover {
 /* TAREA 4.3: Selector Combinado (Etiqueta + Clase)
    Selecciona el elemento <li> que tiene la clase "item-especial" y ponle un color de fondo 
    amarillo claro (#fffacd). */
+   [li = item-especial] {
+      color: #fffacd;
+   }
