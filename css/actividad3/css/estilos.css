@@ -1,0 +1,39 @@
+.caja1 {
+    margin: 2%;
+    background-color:bisque;
+    padding: 20px;
+    border: 10px solid #ffe600;
+    width: 40%;
+    text-align: justify;
+    float: left;
+}
+
+.caja2 {
+    clear: left;
+    border: 3px dashed #00ff80;
+    background-color: #ffa26d;
+    border-radius: 10px 50px;
+    text-align: justify;
+    width: 40%;
+    padding: 20px;
+    box-shadow: 5px 9px 3px rgb(255, 146, 146);
+}
+
+.caja3 {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin: 2%;
+    width: 40%;
+    text-align: justify;
+}
+
+p.bola {
+    border: 10px solid black;
+    border-image-source: url(../img/bola-100.png);
+
+}
+
+pastilla: border-image-slice
+
+hormigas: border-image-repeat
