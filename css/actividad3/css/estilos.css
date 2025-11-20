@@ -1,26 +1,26 @@
 .caja1 {
     margin: 2%;
-    background-color:bisque;
+    background-color: bisque;
     padding: 20px;
     border: 10px solid #ffe600;
     width: 40%;
     text-align: justify;
-    float: left;
+    float: left;                    /* Flota la caja a la izquierda */
 }
 
 .caja2 {
     clear: left;
-    border: 3px dashed #00ff80;
+    border: 3px dashed #00ff80;     /* Borde discontinuo */
     background-color: #ffa26d;
-    border-radius: 10px 50px;
+    border-radius: 10px 50px;       /* Esquinas redondeadas elípticas */
     text-align: justify;
     width: 40%;
     padding: 20px;
-    box-shadow: 5px 9px 3px rgb(255, 146, 146);
+    box-shadow: 5px 9px 3px rgb(255, 146, 146); /* Sombra suave */
 }
 
 .caja3 {
-    position: absolute;
+    position: absolute;             /* Posiciona la caja relativa al contenedor */
     top: 0px;
     left: 50%;
     margin: 2%;
@@ -30,14 +30,40 @@
 
 p.bola {
     border: 10px solid black;
-    border-image-source: url(../img/bola-100.png);
-
+    border-image-source: url(../img/bola-100.png);   /* Imagen usada como borde */
 }
 
-p.pastilla: {
-    clear: both;
-    border: 20px solid transexual;
-    
-} border-image-slice
+p.pastilla {
+    width: 60%;
+    margin: 20px auto;
+    padding: 5px;
+    text-align: left;
+    background-color: #ffffff;
+    border-style: solid;
+    border-width: 20px;                        /* Define grosor del borde-imagen */
+    border-image-source: url("../img/pastilla.png");
+    border-image-slice: 25;
+}
 
-hormigas: border-image-repeat
+.ventana {
+    width: 70%;
+    margin: 30px auto;
+    padding: 10px 20px;
+    background: #fff;
+    border-style: solid;
+    border-width: 35px 8px 12px 8px;           /* Borde superior más grueso */
+    border-image-source: url("../img/ventana.png");
+    border-image-slice: 35 8 12 8;
+}
+
+p.hormigas {
+    margin: 10px auto 20px auto;
+    width: 80%;
+    text-align: justify;
+    padding: 15px;
+    border-width: 16px;
+    border-style: solid;
+    border-image-source: url("../img/hormigas.png");
+    border-image-slice: 40;
+    border-image-repeat: round;               /* Repite la imagen para el borde */
+}
