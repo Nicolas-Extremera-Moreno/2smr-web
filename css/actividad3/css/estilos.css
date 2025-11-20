@@ -34,6 +34,10 @@ p.bola {
 
 }
 
-pastilla: border-image-slice
+p.pastilla: {
+    clear: both;
+    border: 20px solid transexual;
+    
+} border-image-slice
 
 hormigas: border-image-repeat
