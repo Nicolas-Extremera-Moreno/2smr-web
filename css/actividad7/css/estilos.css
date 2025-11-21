@@ -1,121 +1,101 @@
+/* El tamaño de cada caja incluye el relleno y el borde */
+* {
+   box-sizing: border-box;
+}
+
+/* Centra la página y pone fondo suave */
 body {
-    background: #f7fbbb;       /* Color de fondo general de la página */
-    font-family: Arial, sans-serif; /* Tipografía principal para todo el sitio */
-    margin: 0;                 /* Elimina el espacio externo por defecto */
+   margin: 0 auto;
+   width: 96%;
+   font-family: Arial, sans-serif;
+   background-color: #f7f7bc;
 }
 
-header {
-    text-align: center;        /* Centra el contenido del encabezado */
-    margin-bottom: 0;          /* Elimina espacio debajo del encabezado */
-}
-
+/* Título principal azul y fuente especial */
 header h1 {
-    color: #2417d9;                /* Color del texto del título principal */
-    font-family: 'Comic Sans MS', cursive, sans-serif; /* Tipo de letra decorativa para el h1 */
-    font-size: 2.5em;              /* Tamaño grande del título */
-    margin: .8em 0 .3em 0;         /* Espaciado específico arriba y abajo */
+   font-family: 'Audiowide', Arial, sans-serif;
+   color: #1d23ed;
+   text-align: center;
+   font-size: 2.5em;
+   margin-top: 24px;
 }
 
+/* Menú navegación con fondo rosado */
 nav {
-    background: #fbc6df;       /* Fondo rosado para menú de navegación */
-    padding: .3em 0;           /* Espaciado vertical interno para la barra */
+   background-color: #eebbc7;
+   margin-top: 28px;
+   margin-bottom: 10px;
+   padding: 5px 0;
 }
 
 nav ul {
-    list-style: none;          /* Sin viñetas en la lista de navegación */
-    margin: 0;                 /* Quita espacio superior/ inferior en lista */
-    padding: 0;                /* Elimina el espacio interno de la lista */
-    display: flex;             /* Usa modelo flexible para los ítems */
-    justify-content: flex-start; /* Alinea los ítems a la izquierda */
-    gap: 28px;                 /* Espacio entre los elementos de navegación */
+   display: flex;
+   list-style: none;
+   justify-content: flex-start;
+   gap: 25px;
+   margin: 0;
+   padding: 0 15px;
 }
 
-nav li {
-    display: inline-block;     /* Coloca los ítems de navegación en línea */
+nav a {
+   text-decoration: none;
+   color: #30305a;
+   padding: 0 15px;
+   font-weight: bold;
+   font-size: 1.1em;
 }
 
-nav ul li a {
-    color: #212491;            /* Color azul para enlaces del menú */
-    text-decoration: none;     /* Quita subrayado en los enlaces del menú */
-    font-weight: normal;       /* Peso de fuente estándar para enlaces */
+nav a:hover {
+   color: #c2117d;
+   background-color: #fff;
+   border-radius: 5px;
 }
 
-#destacado {
-    border: 2px dashed gold;   /* Borde discontinuo dorado */
-    background: #fffec5;       /* Fondo amarillo claro para sección destacada */
-    padding: .5em 1em;         /* Espaciado interno para contenido destacado */
-    margin: 1em;               /* Espacio externo alrededor del destacado */
+/* Mensaje destacado debajo del menú */
+.mensaje-destacado {
+   border: 2px dashed orange;
+   background: transparent;
+   color: #3d3d3d;
+   padding: 10px;
+   margin-bottom: 18px;
 }
 
-.contenedor-cajas {
-    display: flex;             /* Layout flexible para cajas de contenido */
-    flex-wrap: wrap;           /* Permite que las cajas se ajusten en varias filas */
-    gap: 3em;                  /* Espaciado amplio entre las cajas */
-    justify-content: center;   /* Centra las cajas horizontalmente */
-    align-items: flex-start;   /* Alinea cajas arriba verticalmente */
-    margin: 2em 1em;           /* Espacio exterior arriba y a los lados */
+/* Alinea las dos cajas principales en horizontal */
+main {
+   display: flex;
+   justify-content: space-between;
+   gap: 3%;
+   margin-bottom: 35px;
 }
 
-.caja {
-    background: #e8fdb3;        /* Fondo verde claro para cada caja */
-    border: 2px solid #192769;  /* Borde azul oscuro en cada caja */
-    padding: 1.2em 1.5em;       /* Espaciado interno generoso */
-    flex: 1 1 340px;            /* Flexibilidad y tamaño base de cada caja */
-    min-width: 280px;           /* Anchura mínima para cajas */
-    max-width: 410px;           /* Anchura máxima para cajas */
-    box-sizing: border-box;     /* Incluye borde y relleno en el tamaño */
+/* Estilo de los dos recuadros del centro */
+.caja-izquierda, .caja-derecha {
+   background: #c9e6b6;   /* Verde claro */
+   border: 2px solid #3b45d2; /* Borde azul */
+   padding: 20px;
+   width: 45%;
+   min-height: 180px;
+   box-sizing: border-box;
 }
 
-.caja h2 a, .caja h2 {
-    color: #257d14;            /* Texto verde para títulos en las cajas */
-    font-size: 1em;            /* Tamaño estándar en los títulos h2 de cajas */
-    font-weight: bold;         /* Títulos de caja en negrita */
-    text-decoration: underline; /* Subraya los títulos de las cajas */
+/* Ajusta texto y separación interna */
+.caja-izquierda p, .caja-derecha p, .caja-derecha span {
+    color: #264004;
+    font-size: 1em;
+    margin-bottom: 12px;
 }
 
-.caja ul {
-    margin: .5em 0;            /* Espacio arriba y abajo en listas de las cajas */
-    padding-left: 20px;        /* Sangría para los ítems de lista */
+/* Opcional: bordes para las imágenes */
+.caja-derecha img {
+    background: #fff;
+    border: 1px solid #aaa;
 }
 
-.caja.info {
-    margin-right: 1em;         /* Espacio extra a la derecha solo para cajas info */
-}
-
-.caja.imagenes .imagen-texto {
-    margin-bottom: 1.2em;      /* Separación inferior en bloques de imagen-texto */
-    display: flex;             /* Organización horizontal de imagen y texto */
-    align-items: center;       /* Centra verticalmente imagen y texto */
-    gap: 10px;                 /* Espacio entre imagen y texto */
-}
-
-.caja.imagenes img {
-    width: 80px;               /* Tamaño fijo para imágenes en cajas */
-    border: 1px solid #aaa;    /* Borde gris claro para imágenes */
-    background: #fff;          /* Fondo blanco para imágenes */
-}
-
+/* Footer sencillo */
 footer {
-    padding: .9em 1em .5em 1em; /* Espaciado interno en el pie de página */
-    color: #292929;            /* Color oscuro para texto del footer */
-    font-size: 0.95em;         /* Tamaño ligeramente menor en el footer */
-    border-top: 1px solid #ddd; /* Línea superior separa el pie de página */
-    background: #f7fbbb;       /* Mismo fondo claro que el body */
-}
-
-footer a {
-    color: #265e91;            /* Color azul para enlaces del footer */
-    text-decoration: underline; /* Enlaces subrayados en el footer */
-}
-
-/* Responsivo */
-@media (max-width: 850px) {
-    .contenedor-cajas {
-        flex-direction: column;  /* Cajas apiladas verticalmente en móviles */
-        gap: 2em;                /* Espacio reducido entre cajas */
-        align-items: stretch;    /* Cajas estiran ancho en móviles */
-    }
-    .caja {
-        max-width: 100%;         /* Cajas ocupan todo el ancho disponible */
-    }
+   font-size: .95em;
+   color: #333;
+   margin-top: 35px;
+   text-align: left;
+   padding-bottom: 12px;
 }
