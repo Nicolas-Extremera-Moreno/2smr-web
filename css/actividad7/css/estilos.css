@@ -1,0 +1,121 @@
+body {
+    background: #f7fbbb;       /* Color de fondo general de la página */
+    font-family: Arial, sans-serif; /* Tipografía principal para todo el sitio */
+    margin: 0;                 /* Elimina el espacio externo por defecto */
+}
+
+header {
+    text-align: center;        /* Centra el contenido del encabezado */
+    margin-bottom: 0;          /* Elimina espacio debajo del encabezado */
+}
+
+header h1 {
+    color: #2417d9;                /* Color del texto del título principal */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Tipo de letra decorativa para el h1 */
+    font-size: 2.5em;              /* Tamaño grande del título */
+    margin: .8em 0 .3em 0;         /* Espaciado específico arriba y abajo */
+}
+
+nav {
+    background: #fbc6df;       /* Fondo rosado para menú de navegación */
+    padding: .3em 0;           /* Espaciado vertical interno para la barra */
+}
+
+nav ul {
+    list-style: none;          /* Sin viñetas en la lista de navegación */
+    margin: 0;                 /* Quita espacio superior/ inferior en lista */
+    padding: 0;                /* Elimina el espacio interno de la lista */
+    display: flex;             /* Usa modelo flexible para los ítems */
+    justify-content: flex-start; /* Alinea los ítems a la izquierda */
+    gap: 28px;                 /* Espacio entre los elementos de navegación */
+}
+
+nav li {
+    display: inline-block;     /* Coloca los ítems de navegación en línea */
+}
+
+nav ul li a {
+    color: #212491;            /* Color azul para enlaces del menú */
+    text-decoration: none;     /* Quita subrayado en los enlaces del menú */
+    font-weight: normal;       /* Peso de fuente estándar para enlaces */
+}
+
+#destacado {
+    border: 2px dashed gold;   /* Borde discontinuo dorado */
+    background: #fffec5;       /* Fondo amarillo claro para sección destacada */
+    padding: .5em 1em;         /* Espaciado interno para contenido destacado */
+    margin: 1em;               /* Espacio externo alrededor del destacado */
+}
+
+.contenedor-cajas {
+    display: flex;             /* Layout flexible para cajas de contenido */
+    flex-wrap: wrap;           /* Permite que las cajas se ajusten en varias filas */
+    gap: 3em;                  /* Espaciado amplio entre las cajas */
+    justify-content: center;   /* Centra las cajas horizontalmente */
+    align-items: flex-start;   /* Alinea cajas arriba verticalmente */
+    margin: 2em 1em;           /* Espacio exterior arriba y a los lados */
+}
+
+.caja {
+    background: #e8fdb3;        /* Fondo verde claro para cada caja */
+    border: 2px solid #192769;  /* Borde azul oscuro en cada caja */
+    padding: 1.2em 1.5em;       /* Espaciado interno generoso */
+    flex: 1 1 340px;            /* Flexibilidad y tamaño base de cada caja */
+    min-width: 280px;           /* Anchura mínima para cajas */
+    max-width: 410px;           /* Anchura máxima para cajas */
+    box-sizing: border-box;     /* Incluye borde y relleno en el tamaño */
+}
+
+.caja h2 a, .caja h2 {
+    color: #257d14;            /* Texto verde para títulos en las cajas */
+    font-size: 1em;            /* Tamaño estándar en los títulos h2 de cajas */
+    font-weight: bold;         /* Títulos de caja en negrita */
+    text-decoration: underline; /* Subraya los títulos de las cajas */
+}
+
+.caja ul {
+    margin: .5em 0;            /* Espacio arriba y abajo en listas de las cajas */
+    padding-left: 20px;        /* Sangría para los ítems de lista */
+}
+
+.caja.info {
+    margin-right: 1em;         /* Espacio extra a la derecha solo para cajas info */
+}
+
+.caja.imagenes .imagen-texto {
+    margin-bottom: 1.2em;      /* Separación inferior en bloques de imagen-texto */
+    display: flex;             /* Organización horizontal de imagen y texto */
+    align-items: center;       /* Centra verticalmente imagen y texto */
+    gap: 10px;                 /* Espacio entre imagen y texto */
+}
+
+.caja.imagenes img {
+    width: 80px;               /* Tamaño fijo para imágenes en cajas */
+    border: 1px solid #aaa;    /* Borde gris claro para imágenes */
+    background: #fff;          /* Fondo blanco para imágenes */
+}
+
+footer {
+    padding: .9em 1em .5em 1em; /* Espaciado interno en el pie de página */
+    color: #292929;            /* Color oscuro para texto del footer */
+    font-size: 0.95em;         /* Tamaño ligeramente menor en el footer */
+    border-top: 1px solid #ddd; /* Línea superior separa el pie de página */
+    background: #f7fbbb;       /* Mismo fondo claro que el body */
+}
+
+footer a {
+    color: #265e91;            /* Color azul para enlaces del footer */
+    text-decoration: underline; /* Enlaces subrayados en el footer */
+}
+
+/* Responsivo */
+@media (max-width: 850px) {
+    .contenedor-cajas {
+        flex-direction: column;  /* Cajas apiladas verticalmente en móviles */
+        gap: 2em;                /* Espacio reducido entre cajas */
+        align-items: stretch;    /* Cajas estiran ancho en móviles */
+    }
+    .caja {
+        max-width: 100%;         /* Cajas ocupan todo el ancho disponible */
+    }
+}
