@@ -31,7 +31,6 @@ nav {
 nav ul {
    display: flex;
    list-style: none;
-   justify-content: flex-start;
    gap: 25px;
    margin: 0;
    padding: 0 15px;
@@ -48,7 +47,6 @@ nav a {
 nav a:hover {
    color: #c2117d;
    background-color: #fff;
-   border-radius: 5px;
 }
 
 /* Mensaje destacado debajo del menú */
