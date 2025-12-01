@@ -1,124 +1,124 @@
 /*vamos a crear una variable desde la pseudoclase root para poder acceder a estas variable desde cualquier parte del documento */
 :root{
-    --padding-container: 50px 0; /* arriba y abajo 100px, izquierda y derecha 0 */
+    --padding-container: 50px 0; /* arriba y abajo 50px, izquierda y derecha 0 */
 }
 
 
 /*reseteo de margenes y paddings y box-sizing para que el padding y border se incluyan dentro del width y height*/
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* elimina márgenes por defecto */
+    padding: 0; /* elimina relleno por defecto */
+    box-sizing: border-box; /* incluye padding y borde dentro del ancho y alto */
 }
 
 
 /* Es el contenedor de la página */
 .mi_contenedor{
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto; /* centramos verticalmente el contenedor */
-    overflow: hidden; /* para que no se salga nada del contenedor, si se sale se esconde*/
-    padding: var(--padding-container);
-    justify-content: space-between;
-    /* background-color: black;*/
+    width: 90%; /* ocupa el 90% del ancho disponible */
+    max-width: 1200px; /* no supera los 1200px de ancho */
+    margin: 0 auto; /* centra horizontalmente el contenedor */
+    overflow: hidden; /* oculta contenido que se desborde */
+    padding: var(--padding-container); /* aplica el padding definido en la variable */
+    justify-content: space-between; /* distribuye elementos con espacio entre ellos */
+    /* background-color: black; */ /* color de fondo opcional */
 }
 
 
 .mi_menu{
-    /*background: rgba(0,0,0,0.5);*/
-    position: relative;
-    display: flex; /* activamos flexbox */
-    flex-flow: row nowrap; /* los elementos van en fila y no se envuelven */
-    height: 100px;
-    align-items: center; /* alineamos los elementos verticalmente al centro */
-    --padding-container: 0; /* anulamos el padding del contenedor solo para el menu */
-    border-bottom: 2px solid rgb(214, 214, 214);
+    /*background: rgba(0,0,0,0.5);*/ /* fondo semitransparente opcional */
+    position: relative; /* posiciona relativo al flujo normal */
+    display: flex; /* activa flexbox */
+    flex-flow: row nowrap; /* elementos en fila sin salto de línea */
+    height: 100px; /* altura fija de 100px */
+    align-items: center; /* centra verticalmente los elementos */
+    --padding-container: 0; /* anula el padding del contenedor solo en el menú */
+    border-bottom: 2px solid rgb(214, 214, 214); /* línea inferior gris */
 }
 
 
 .logo{
-    flex: 0 1 auto; /* el logo ocupa su espacio natural */
-    max-width: 90px; /* maximo ancho del logo */
-    min-width: 90px;    
+    flex: 0 1 auto; /* ocupa solo su espacio natural */
+    max-width: 90px; /* ancho máximo de 90px */
+    min-width: 90px; /* ancho mínimo de 90px */
 }
 
 
 .menu_nav{
-    flex: 2 1 70%; /* el menu ocupa 70% del espacio disponible */
-    display: flex;
-    justify-content: space-evenly; /* distribuimos los elementos del menu equitativamente */
+    flex: 2 1 70%; /* ocupa 70% del espacio disponible */
+    display: flex; /* activa flexbox */
+    justify-content: space-evenly; /* distribuye enlaces con espacio equitativo */
 }
 
 
 .menu_nav a{
-    text-decoration: none;
-    color: white;
+    text-decoration: none; /* elimina subrayado de los enlaces */
+    color: white; /* color del texto en blanco */
 }
 
 
 .menu_social{
-    flex: 1 1 auto;
-    display: flex;
-    justify-content: space-evenly; /* distribuimos los elementos del menu social con espacio alrededor */
+    flex: 1 1 auto; /* ocupa espacio flexible */
+    display: flex; /* activa flexbox */
+    justify-content: space-evenly; /* distribuye iconos con espacio equitativo */
 }
 
 
 .menu_social a img{
-    width: 32px;
-    min-width: 28%;
+    width: 32px; /* ancho fijo de 32px */
+    min-width: 28%; /* ancho mínimo relativo al contenedor */
 }
 
 
 .mi_header::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(
+    content: ""; /* crea un pseudo-elemento vacío */
+    position: absolute; /* se posiciona de forma absoluta */
+    top: 0; /* se coloca en la parte superior */
+    left: 0; /* se coloca en la parte izquierda */
+    width: 100%; /* ocupa todo el ancho */
+    height: 100%; /* ocupa todo el alto */
+    background-image: linear-gradient( /* aplica un degradado encima de la imagen */
         180deg,
-        rgba(0, 0, 0, 0.25) 0%,
-        rgba(0, 0, 0, 0.5) 100%
+        rgba(0, 0, 0, 0.25) 0%, /* negro semitransparente arriba */
+        rgba(0, 0, 0, 0.5) 100% /* negro más oscuro abajo */
     ),
-    url("../img/fondo_header3.jpg");
-    background-size: cover;
-    background-position: center 80%; /* centra horizontalmente y sube verticalmente */
-    clip-path: polygon(100% 0, 100% 85%, 50% 95%, 0 85%, 0 0);
-    z-index: -1;
+    url("../img/fondo_header3.jpg"); /* imagen de fondo */
+    background-size: cover; /* la imagen cubre todo el área */
+    background-position: center 80%; /* centrada horizontal y desplazada verticalmente */
+    clip-path: polygon(100% 0, 100% 85%, 50% 95%, 0 85%, 0 0); /* recorta con forma poligonal */
+    z-index: -1; /* se coloca detrás del contenido */
 }
 
 .header_container{
-    height: 75%;
-    display: flex;
-    flex-direction: column; /* los elementos van en columna */
-    justify-content: center; /* centramos verticalmente */
-    color: white;
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-    padding-top: 15%;
+    height: 75%; /* ocupa el 75% de la altura disponible */
+    display: flex; /* activa flexbox */
+    flex-direction: column; /* organiza elementos en columna */
+    justify-content: center; /* centra verticalmente */
+    color: white; /* texto en blanco */
+    text-align: center; /* centra el texto horizontalmente */
+    max-width: 800px; /* ancho máximo de 800px */
+    margin: 0 auto; /* centra horizontalmente */
+    padding-top: 15%; /* añade espacio superior */
 }
 
 
 .header_title{
-    font-size: 3rem;
-    padding: 20px 0;
+    font-size: 3rem; /* tamaño de fuente grande */
+    padding: 20px 0; /* espacio arriba y abajo */
 }
 
 
 .header_paragraph{
-    font-size: 1.2rem;
-    line-height: 2rem;
-    margin-bottom: 25px;
+    font-size: 1.2rem; /* tamaño de fuente medio */
+    line-height: 2rem; /* altura de línea para legibilidad */
+    margin-bottom: 25px; /* espacio inferior */
 }
 
 
 .cta{
-    display: inline-block;
-    background-color: blue;
-    align-self: center; /* centramos el boton horizontalmente */
-    color: white;
-    padding: 13px 30px;
-    border-radius: 32px;
+    display: inline-block; /* se comporta como bloque en línea */
+    background-color: blue; /* color de fondo azul */
+    align-self: center; /* centra el botón horizontalmente */
+    color: white; /* texto en blanco */
+    padding: 13px 30px; /* espacio interno arriba/abajo y lados */
+    border-radius: 32px; /* bordes redondeados */
 }
