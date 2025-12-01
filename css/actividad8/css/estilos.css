@@ -4,7 +4,7 @@
 }
 
 
-/*reseteo de margenes y paddings y box-sizing para que el padding y border se incluyan dentro del width y height*/
+/* reseteo de margenes y paddings y box-sizing para que el padding y border se incluyan dentro del width y height */
 *{
     margin: 0; /* elimina márgenes por defecto */
     padding: 0; /* elimina relleno por defecto */
