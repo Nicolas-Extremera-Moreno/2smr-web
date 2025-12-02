@@ -21,6 +21,7 @@
     padding: var(--padding-container); /* aplica el padding definido en la variable */
     justify-content: space-between; /* distribuye elementos con espacio entre ellos */
     /* background-color: black; */ /* color de fondo opcional */
+    /* gap; 10px; */ /* separación entre áreas */
 }
 
 
