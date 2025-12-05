@@ -1,114 +1,104 @@
-/* El tamaño de cada caja incluye el relleno y el borde */
-* {
-   box-sizing: border-box;
+/* Modelo de caja general */
+* { /* Selector universal */
+   box-sizing: border-box; /* Incluye borde y padding en el tamaño total */
 }
 
-
-/* Centra la página y pone fondo suave */
-body {
-   margin: 0 auto;
-   width: 96%;
-   font-family: Arial, sans-serif;
-   background-color: #f7f7bc;
+/* Estilo del body */
+body { /* Cuerpo de la página */
+   margin: 0 auto; /* Centra horizontalmente */
+   width: 96%; /* Limita el ancho del contenido */
+   font-family: Arial, sans-serif; /* Fuente principal */
+   background-color: #f7f7bc; /* Fondo amarillo suave */
 }
 
-
-/* Título principal azul y fuente especial */
-header h1 {
-   font-family: 'Audiowide', Arial, sans-serif;
-   color: #1d23ed;
-   text-align: center;
-   font-size: 2.5em;
-   margin-top: 24px;
+/* Título principal */
+header h1 { /* h1 dentro del header */
+   font-family: 'Audiowide', Arial, sans-serif; /* Fuente especial para el título */
+   color: #1d23ed; /* Texto azul */
+   text-align: center; /* Centrado horizontal */
+   font-size: 2.5em; /* Tamaño grande */
+   margin-top: 24px; /* Espacio superior */
 }
 
-
-/* Menú navegación con fondo rosado */
-nav {
-   background-color: #eebbc7;
-   margin-top: 28px;
-   margin-bottom: 10px;
-   padding: 5px 0;
+/* Contenedor del menú */
+nav { /* Barra de navegación */
+   background-color: #eebbc7; /* Fondo rosado */
+   margin-top: 28px; /* Separación con el título */
+   margin-bottom: 10px; /* Separación con el bloque siguiente */
+   padding: 5px 0; /* Relleno vertical */
 }
 
-
-/* NAV con grid */
-nav ul {
-   display: grid;
-   grid-auto-flow: column;       /* Coloca los <li> uno al lado del otro */
-   grid-auto-columns: max-content;
-   column-gap: 25px;
-   list-style: none;
-   margin: 0;
-   padding: 0 15px;
+/* Lista del menú con grid */
+nav ul { /* Lista de enlaces del menú */
+   display: grid; /* Usa grid para colocar los elementos */
+   grid-auto-flow: column; /* Coloca los <li> en una fila */
+   grid-auto-columns: max-content; /* Ancho según el contenido */
+   column-gap: 25px; /* Espacio entre elementos del menú */
+   list-style: none; /* Sin viñetas */
+   margin: 0; /* Sin margen por defecto */
+   padding: 0 15px; /* Relleno lateral */
 }
 
-
-nav a {
-   text-decoration: none;
-   color: #30305a;
-   padding: 0 15px;
-   font-weight: bold;
-   font-size: 1.1em;
+/* Enlaces del menú */
+nav a { /* Enlaces dentro del nav */
+   text-decoration: none; /* Sin subrayado */
+   color: #30305a; /* Color del texto del menú */
+   padding: 0 15px; /* Relleno lateral clickable */
+   font-weight: bold; /* Texto en negrita */
+   font-size: 1.1em; /* Tamaño de letra algo mayor */
 }
 
-
-nav a:hover {
-   color: #c2117d;
-   background-color: #fff;
-   border-radius: 10%;
+/* Efecto al pasar el ratón por el menú */
+nav a:hover { /* Estado hover del enlace */
+   color: #c2117d; /* Cambia color del texto */
+   background-color: #fff; /* Pone fondo blanco */
+   border-radius: 10%; /* Esquinas redondeadas */
 }
 
-
-/* Mensaje destacado debajo del menú */
-.mensaje-destacado {
-   border: 2px dashed orange;
-   background: transparent;
-   color: #3d3d3d;
-   padding: 10px;
-   margin-bottom: 18px;
+/* Mensaje destacado */
+.mensaje-destacado { /* Caja de aviso */
+   border: 2px dashed orange; /* Borde naranja discontinuo */
+   background: transparent; /* Sin fondo sólido */
+   color: #3d3d3d; /* Texto gris oscuro */
+   padding: 10px; /* Relleno interno */
+   margin-bottom: 18px; /* Separación inferior */
 }
 
-
-/* Layout principal */
-main {
-   display: grid;
+/* Contenedor principal */
+main { /* Zona principal de contenido */
+   display: grid; /* Usa grid para la maquetación */
    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
-   column-gap: 3%;
-   margin-bottom: 35px;
+   column-gap: 3%; /* Separación entre columnas */
+   margin-bottom: 35px; /* Espacio antes del footer */
 }
 
-
-/* Estilo de los dos recuadros del centro */
-.caja-izquierda, .caja-derecha {
-   background: #c9e6b6;   /* Verde claro */
+/* Cajas centrales */
+.caja-izquierda, .caja-derecha { /* Dos bloques del centro */
+   background: #c9e6b6; /* Fondo verde claro */
    border: 2px solid #3b45d2; /* Borde azul */
-   padding: 20px;
-   min-height: 180px;
-   box-sizing: border-box;
+   padding: 20px; /* Relleno interno */
+   min-height: 180px; /* Altura mínima */
+   box-sizing: border-box; /* Mantiene tamaño controlado */
 }
 
-
-/* Ajusta texto y separación interna */
-.caja-izquierda p, .caja-derecha p, .caja-derecha span {
-    color: #264004;
-    font-size: 1em;
-    margin-bottom: 12px;
+/* Texto dentro de las cajas */
+.caja-izquierda p, .caja-derecha p, .caja-derecha span { /* Textos en las cajas */
+    color: #264004; /* Texto verde oscuro */
+    font-size: 1em; /* Tamaño normal */
+    margin-bottom: 12px; /* Separación entre líneas de texto */
 }
 
-
-/* Opcional: bordes para las imágenes */
-.caja-derecha img {
-    background: #fff;
-    border: 1px solid #aaa;
+/* Imágenes en la caja derecha */
+.caja-derecha img { /* Imágenes dentro de la caja derecha */
+    background: #fff; /* Fondo blanco detrás de la imagen */
+    border: 1px solid #aaa; /* Borde gris fino */
 }
 
-
-/* Footer sencillo */
-footer {
-   font-size: .95em;
-   color: #333;
-   margin-top: 35px;
-   text-align: left;
-   padding-bottom: 12px;
+/* Pie de página */
+footer { /* Contenedor del footer */
+   font-size: .95em; /* Letra un poco más pequeña */
+   color: #333; /* Texto gris oscuro */
+   margin-top: 35px; /* Separación respecto al contenido */
+   text-align: left; /* Alinea el texto a la izquierda */
+   padding-bottom: 12px; /* Relleno inferior */
 }
