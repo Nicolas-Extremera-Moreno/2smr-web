@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(245, 253, 185);
+    width: 80%;
+    margin: 0 auto;
+}
+header
+{
+    display: flex;
+    background-color: rgb(255, 182, 193);
+    padding: 20px;
+    justify-content: space-between;
+  /*  border: 2px solid black;
+    margin-bottom: 20px;*/
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+     height: 50vh;
+   /* border: 2px solid black;**/
+}
+.item{
+    border: 2px solid red;
+    background-color: rgb(173, 216, 230);
+    padding: 20px;
+    margin: 10px;
+    font-size: 20px;
+    text-align: center;
+    flex-flow: 1 1 auto;
+}
+.item3{
+    align-self:flex-end
+}
+.menu_social{
+    display: flex;
+    flex-direction: row;
+    justify-content:center ;
+    align-items: center;
+    height: 100%;
+}
+a{  
+    text-decoration: none;
+    color: black;   
+}
