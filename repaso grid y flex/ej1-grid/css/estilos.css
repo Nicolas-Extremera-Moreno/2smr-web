@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+
+}
+
+.mi_container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;    /* centra todo el contenido */
+    padding: 100px;
+    overflow: hidden;  /* todo lo que se salga del contenedor, lo oculta */
+}
+
+.grid_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;    /* 4 columnas */
+    gap: 1rem;
+    overflow: hidden;
+}
+
+.mi_tarjeta{
+    display: grid;
+    gap: 1em;
+    padding: 0.5rem 0;
+    overflow: hidden;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

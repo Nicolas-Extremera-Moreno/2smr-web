@@ -21,9 +21,11 @@
     padding: var(--padding-container); /* aplica el padding definido en la variable */
     justify-content: space-between; /* distribuye elementos con espacio entre ellos */
     /* background-color: black; */ /* color de fondo opcional */
+    /* gap; 10px; */ /* separación entre áreas */
 }
 
 
+/* MENÚ DE NAVEGACIÓN SUPERIOR */
 .mi_menu{
     /*background: rgba(0,0,0,0.5);*/ /* fondo semitransparente opcional */
     position: relative; /* posiciona relativo al flujo normal */
@@ -35,14 +37,14 @@
     border-bottom: 2px solid rgb(214, 214, 214); /* línea inferior gris */
 }
 
-
+/* IMAGEN DEL PAJARO (LOGO) */
 .logo{
     flex: 0 1 auto; /* ocupa solo su espacio natural */
     max-width: 90px; /* ancho máximo de 90px */
     min-width: 90px; /* ancho mínimo de 90px */
 }
 
-
+/* NAVEGACIÓN PRINCIPAL */
 .menu_nav{
     flex: 2 1 70%; /* ocupa 70% del espacio disponible */
     display: flex; /* activa flexbox */
@@ -63,12 +65,14 @@
 }
 
 
+/* MENÚ DE REDES SOCIALES */
 .menu_social a img{
     width: 32px; /* ancho fijo de 32px */
     min-width: 28%; /* ancho mínimo relativo al contenedor */
 }
 
 
+/* CABECERA DE LA PÁGINA CON FONDO */
 .mi_header::before{
     content: ""; /* crea un pseudo-elemento vacío */
     position: absolute; /* se posiciona de forma absoluta */
@@ -88,6 +92,8 @@
     z-index: -1; /* se coloca detrás del contenido */
 }
 
+
+/* CONTENIDO INTERNO DEL HEADER */
 .header_container{
     height: 75%; /* ocupa el 75% de la altura disponible */
     display: flex; /* activa flexbox */
@@ -101,12 +107,14 @@
 }
 
 
+/* TÍTULO PRINCIPAL DEL HEADER */
 .header_title{
     font-size: 3rem; /* tamaño de fuente grande */
     padding: 20px 0; /* espacio arriba y abajo */
 }
 
 
+/* PÁRRAFO DEL HEADER */
 .header_paragraph{
     font-size: 1.2rem; /* tamaño de fuente medio */
     line-height: 2rem; /* altura de línea para legibilidad */
@@ -114,6 +122,7 @@
 }
 
 
+/* BOTÓN DE LLAMADA A LA ACCIÓN (CTA) */
 .cta{
     display: inline-block; /* se comporta como bloque en línea */
     background-color: blue; /* color de fondo azul */
