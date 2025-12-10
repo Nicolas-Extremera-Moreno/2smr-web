@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(245, 253, 185);
+    width: 80%;
+    margin: 0 auto;
+}
+h1{
+    text-align: center;
+    font-size: 2.5em;
+    color: blue;
+    font-family: "Audiowide", sans-serif;
+}
+
+/* Selector de id */
+#destacado {
+    background-color: #ffffcc;
+    border: 2px dashed orange;
+    padding: 10px;
+}
+
+/* Navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    background-color: rgb(240, 183, 183);
+    overflow: hidden; 
+}
+/*Si los elementos de tu lista (<li>) tienen la propiedad float: left para ponerse uno al lado del otro, ocurre un problema clásico: el contenedor padre (<ul>) pierde su altura y colapsa a 0.
+
+Sin overflow: hidden: Los elementos flotantes "salen" del flujo normal. El <ul> pensaría que está vacío, su altura sería 0 píxeles y no verías el color de fondo rgb(240, 183, 183).
+
+Con overflow: hidden: Esta propiedad obliga al navegador a crear un nuevo "Contexto de Formato de Bloque" (BFC). Esto fuerza al <ul> a estirarse y envolver a los hijos flotantes, haciendo que el fondo rosado sea visible.*/
+
+
+nav li a {
+    float: left;
+    /*display: inline-block;*/
+    text-align: center;
+    text-decoration: none;
+    color: blue;
+    padding: 14px 16px;
+}
+
+nav a:hover {
+    color: red;
+    background-color: #eee;
+}
+
+
+/* Selector de elemento */
+p {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.centrado{
+    text-align: center;
+    width: 75%;
+    display: inline-block;
+}
+aside
+{
+    text-align: center;
+    width:25%;
+    float: right;
+}
+/* Selector de clase */
+.caja {
+    display: inline-block;
+    width: 40%;
+    text-align: left;
+    border: 2px solid blue;
+    padding: 15px;
+    margin: 20px;
+}
+
+/* Selector descendiente */
+.caja p {    
+    color: darkgreen;
+}
+
+/* Segundo párrafo dentro de la caja */
+.caja p:nth-of-type(2) {
+    clear: both; /* fuerza a empezar debajo del flotado anterior */
+    padding: 5px;
+}
+
+/* Pseudoselector: primer párrafo dentro de .caja */
+.caja p:first-child {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Imagen flotante izquierda */
+.izquierda {
+    float: left;
+    margin-right: 10px;
+    width: 20%;
+}
+
+/* Imagen flotante derecha */
+.derecha {
+    float: right;
+    margin-left: 10px;
+    width:20%;
+}
+footer{
+    clear: both;
+}
+/* Pseudoselector: último párrafo del pie */
+footer p:last-child {
+    
+    font-style: italic;
+    color: gray;
+}

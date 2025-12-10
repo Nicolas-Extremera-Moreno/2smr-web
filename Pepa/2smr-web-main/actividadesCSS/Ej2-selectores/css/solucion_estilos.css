@@ -1,0 +1,89 @@
+/* =======================================================
+   SOLUCIÓN: APLICACIÓN DE SELECTORES CSS
+   ======================================================= */
+
+
+/* -------------------------------------------------------
+   1. SELECTORES BÁSICOS: Etiqueta, Clase e ID
+   ------------------------------------------------------- */
+
+/* TAREA 1.1: Selector de Etiqueta */
+body {
+    background-color: #f4f4f4;
+}
+
+/* TAREA 1.2: Selector de Identificador (ID) */
+#contenedor-principal {
+    max-width: 960px;
+    margin: auto;
+    padding: 20px;
+    background-color: white; /* Añadido para mejor visualización */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra para destacar */
+}
+
+/* TAREA 1.3: Selector de Clase */
+.parrafo-importante {
+    color: #0056b3;
+    font-weight: bold;
+}
+
+/* TAREA 1.4: Selector de Etiqueta para todos los encabezados H2 */
+h2 {
+    margin-bottom: 15px;
+    color: #333;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+
+
+/* -------------------------------------------------------
+   2. SELECTORES DE AGRUPACIÓN Y DESCENDIENTES
+   ------------------------------------------------------- */
+
+/* TAREA 2.1: Selector de Agrupación */
+h1, .subtitulo {
+    color: #e67e22;
+}
+
+
+/* TAREA 2.2: Selector Descendente */
+.seccion-destacada li {
+    list-style: none;
+}
+
+
+/* -------------------------------------------------------
+   3. SELECTORES DE RELACIÓN (HIJO DIRECTO)
+   ------------------------------------------------------- */
+
+/* TAREA 3.1: Selector de Hijo Directo (>) */
+#caja-ejemplo > p {
+    border: 1px solid #27ae60;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+
+/* -------------------------------------------------------
+   4. SELECTORES AVANZADOS (Atributo, Pseudo-clase)
+   ------------------------------------------------------- */
+
+/* TAREA 4.1: Pseudo-Clase :hover */
+a:hover {
+    color: #e74c3c;
+    text-decoration: underline;
+}
+
+/* TAREA 4.2: Selectores de Atributo (OPCIONAL/AVANZADO) - Usando :not() para excluir */
+a:not(.enlace-secundario) {
+    padding: 5px 10px;
+    background-color: #ddd;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* TAREA 4.3: Selector Combinado (Etiqueta + Clase) */
+li.item-especial {
+    background-color: #fffacd;
+    padding: 5px;
+}

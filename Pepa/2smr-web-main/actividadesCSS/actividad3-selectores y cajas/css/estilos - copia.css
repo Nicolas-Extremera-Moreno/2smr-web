@@ -1,0 +1,70 @@
+/* Selector de elemento */
+p {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Selector de clase */
+.caja {
+    border: 2px solid blue;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Selector descendiente */
+.caja p {
+    color: darkgreen;
+}
+
+/* Pseudoselector: primer párrafo dentro de .caja */
+.caja p:first-child {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Selector de id */
+#destacado {
+    background-color: #ffffcc;
+    border: 2px dashed orange;
+    padding: 10px;
+}
+
+/* Navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav li {
+    display: inline;
+    margin-right: 15px;
+}
+nav a {
+    text-decoration: none;
+    color: blue;
+}
+nav a:hover {
+    color: red;
+    background-color: #eee;
+}
+
+/* Imagen flotante izquierda */
+.izquierda {
+    float: left;
+    margin-right: 10px;
+    width: 200px;
+}
+
+/* Imagen flotante derecha */
+.derecha {
+    float: right;
+    margin-left: 10px;
+    width: 200px;
+}
+
+/* Pseudoselector: último párrafo del pie */
+footer p:last-child {
+    font-style: italic;
+    color: gray;
+}
