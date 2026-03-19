@@ -1,0 +1,442 @@
+/* ====== ESTILOS GENERALES ====== */
+body {
+    background-color: #1a1a1a;
+    color: #ddd;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* ====== HEADER GENERAL ====== */
+.header {
+    background-color: transparent;
+    padding: 15px 40px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ====== LOGO ====== */
+.header .logo img {
+    height: 150px;
+    width: auto;
+}
+
+/* ====== MENÚ ====== */
+.menu {
+    display: flex;
+    gap: 40px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 300;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #C9A86A;
+}
+
+.menu a.activo {
+    color: #C9A86A;
+    font-weight: bold;
+    border-bottom: 2px solid #C9A86A;
+}
+
+/* ====== BOTÓN CONTACTO ====== */
+.btn-contacto {
+    padding: 10px 20px;
+    border: 2px solid #C9A86A;
+    color: #C9A86A;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.btn-contacto:hover {
+    background-color: #C9A86A;
+    color: #000;
+}
+
+.boton-contacto {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.boton-contacto a img {
+    width: 28px;
+    height: 28px;
+    transition: transform 0.3s ease;
+}
+
+.boton-contacto a img:hover {
+    transform: scale(1.2);
+}
+
+/* ====== SEPARADOR DORADO ====== */
+.separador {
+    border: none;
+    height: 1px;
+    background-color: #C9A86A;
+    width: 15%;
+    margin: 40px auto;
+}
+
+/* ====== SECCIÓN SOBRE EL ESTUDIO ====== */
+.sobre {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 100px 40px;
+}
+
+.sobre-texto {
+    flex: 1;
+}
+
+.sobre-texto h2 {
+    font-size: 32px;
+    color: #C9A86A;
+    margin-bottom: 20px;
+}
+
+.sobre-texto p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+.sobre-imagen {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+/* ====== CLIP-PATH IMAGEN SOBRE EL ESTUDIO ====== */
+.sobre-imagen img {
+    width: 100%;
+    max-width: 450px;
+    clip-path: inset(1% 15% 10% 1%);
+}
+
+/* ====== GALERÍA DE TRABAJOS (INDEX) ====== */
+.galeria {
+    padding: 100px 40px;
+}
+
+.galeria h2 {
+    font-size: 32px;
+    color: #C9A86A;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* ====== GRID DE IMÁGENES ====== */
+.grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px 40px 100px 40px;
+}
+
+.grid-galeria img {
+    width: 100%;
+    border: 1px solid #C9A86A;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    animation: fadein 2s ease forwards;
+    display: block;
+    transform-origin: center center;
+}
+
+.grid-galeria img:hover {
+    transform: scale(1.02);
+    border: 5px solid #C9A86A;
+    animation: none;
+}
+
+/* ====== ANIMACIÓN FADEIN GALERÍA ====== */
+@keyframes fadein {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* ====== PÁGINA DE GALERÍA ====== */
+.galeria-titulo {
+    padding: 80px 40px 40px;
+    text-align: center;
+}
+
+.galeria-titulo h1 {
+    font-size: 48px;
+    color: #C9A86A;
+    margin-bottom: 10px;
+}
+
+.galeria-titulo p {
+    font-size: 20px;
+    color: #ccc;
+}
+
+.galeria-instagram {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+.galeria-instagram p {
+    padding: 40px;
+}
+
+/* ====== BOTÓN INSTAGRAM ====== */
+.btn-instagram {
+    padding: 10px 20px;
+    border: 2px solid #C9A86A;
+    color: #C9A86A;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.btn-instagram:hover {
+    background-color: #C9A86A;
+    color: #000;
+}
+
+/* ====== CONTACTO (INDEX) ====== */
+.contacto {
+    padding: 60px 40px;
+}
+
+.contacto h2 {
+    font-size: 32px;
+    color: #C9A86A;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contacto-contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.contacto-mapa {
+    flex: 1;
+}
+
+.contacto-info {
+    flex: 1;
+    font-size: 18px;
+    color: #ddd;
+}
+
+.contacto-info a {
+    color: #C9A86A;
+    text-decoration: none;
+}
+
+.contacto-info a:hover {
+    text-decoration: underline;
+}
+
+.contacto-info ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.contacto-info li {
+    margin: 5px 0;
+}
+
+/* ====== TÍTULO DE CONTACTO (PÁGINA CONTACTO) ====== */
+.contacto-titulo {
+    padding: 80px 40px 5px;
+    text-align: center;
+}
+
+.contacto-titulo h1 {
+    font-size: 48px;
+    color: #C9A86A;
+    margin-bottom: 10px;
+}
+
+.contacto-titulo p {
+    font-size: 20px;
+    color: #ccc;
+}
+
+/* ====== FORMULARIO DE CONTACTO ====== */
+.formulario-contacto {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.formulario-contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formulario-contacto label {
+    color: #C9A86A;
+    font-size: 18px;
+}
+
+.formulario-contacto input,
+.formulario-contacto select,
+.formulario-contacto textarea {
+    padding: 10px;
+    border: 1px solid #444;
+    background-color: #111;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.formulario-contacto input:focus,
+.formulario-contacto select:focus,
+.formulario-contacto textarea:focus {
+    outline: none;
+    border-color: #C9A86A;
+}
+
+.radio-grupo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 8px;
+}
+
+.radio-opcion {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    color: #ddd;
+}
+
+/* ====== BOTÓN ENVIAR ====== */
+.btn-enviar {
+    background-color: transparent;
+    padding: 10px 20px;
+    border: 2px solid #C9A86A;
+    color: #C9A86A;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.btn-enviar:hover {
+    background-color: #C9A86A;
+    color: #000;
+}
+
+/* ====== FOOTER ====== */
+.footer {
+    background: linear-gradient(to bottom, #222, #C9A86A50);
+    padding: 30px 20px;
+    text-align: center;
+    color: #ccc;
+    margin-top: 60px;
+}
+
+.footer p {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.footer-redes a img {
+    width: 28px;
+    height: 28px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.footer-redes a img:hover {
+    transform: scale(1.2);
+}
+
+#mensaje-exito p {
+    text-align: center;
+    font-size: 20px;
+    color: #C9A86A;
+    padding: 40px;
+    border: 1px solid #C9A86A;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* ====== RESPONSIVE TABLET ====== */
+@media (max-width: 992px) {
+    .grid-galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ====== RESPONSIVE MÓVIL ====== */
+@media (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .menu {
+        gap: 20px;
+    }
+
+    .boton-contacto {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+}
+
+    .btn-contacto {
+        display: none; /* oculto el botón porque ya está en el menú de navegacion */
+}
+
+    .sobre {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sobre-imagen img {
+        max-width: 300px;
+    }
+
+    .radio-grupo {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .grid-galeria {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contacto-contenedor {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contacto-info {
+        margin-top: 20px;
+    }
+}
