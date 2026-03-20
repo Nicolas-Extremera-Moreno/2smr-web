@@ -412,7 +412,7 @@ body {
 }
 
     .btn-contacto {
-        display: none; /* oculto el botón porque ya está en el menú de navegacion */
+        display: none;
 }
 
     .sobre {
