@@ -1,123 +1,106 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - Kalí Tattoo Studio</title>
-    <link rel="icon" type="image/png" href="./img/logo-kali-fondo-negro.JPG">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/estilos.css">
-</head>
-<body>
-
-<!-- logo + menú de navegación + botón de contacto -->
-<header class="header">
-    <div class="logo">
-        <a href="./index.html">
-            <img src="./img/logo-kali.png" alt="Kalí Tattoo Studio">
-        </a>
-    </div>
-
-    <nav class="menu">
-        <a href="./index.html">Inicio</a>
-        <a href="./galeria.html">Galería</a>
-        <a href="./contacto.html" class="activo">Contacto</a>
-    </nav>
-
-    <div class="boton-contacto">
-        <a href="./contacto.html" class="btn-contacto">Contacto</a>
-        <a href="https://wa.me/34622337513" target="_blank">
-                <img src="./img/logo-whatsapp.svg" alt="WhatsApp">
-        </a>
-    </div>
-</header>
-
-<!-- título + descripción -->
-<section class="contacto-titulo">
-    <h1>Contacto</h1>
-    <p>Rellena el formulario para solicitar información o pedir cita.</p>
-</section>
-
-<!-- formulario -->
-<section class="formulario-contacto">
-    <form action="#" method="post">
-
-        <label for="nombre">Nombre completo</label>
-        <input type="text" id="nombre" name="nombre" required>
-
-        <label for="email">Correo electrónico</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="telefono">Teléfono</label>
-        <input type="tel" id="telefono" name="telefono">
-
-        <label for="tipo">Tipo de tatuaje</label>
-        <select id="tipo" name="tipo">
-            <option value="realismo">Realismo</option>
-            <option value="blackwork">Blackwork</option>
-            <option value="color">Color</option>
-            <option value="minimalista">Minimalista</option>
-        </select>
-
-        <p><b><i>Tamaño aproximado</i></b></p>
-        <div class="radio-grupo">
-            <div class="radio-opcion">
-                <input type="radio" id="tam-peq" name="tamano" value="pequeño" required>
-                <label for="tam-peq">Pequeño</label>
-            </div>
-
-            <div class="radio-opcion">
-                <input type="radio" id="tam-med" name="tamano" value="mediano">
-                <label for="tam-med">Mediano</label>
-            </div>
-
-            <div class="radio-opcion">
-                <input type="radio" id="tam-gra" name="tamano" value="grande">
-                <label for="tam-gra">Grande</label>
-            </div>
-        </div>
-
-        <label class="checkbox" for="acepta">
-            <input type="checkbox" id="acepta" name="acepta" required>
-            Acepto la política de privacidad
-        </label>
-
-        <label for="mensaje">Mensaje</label>
-        <textarea id="mensaje" name="mensaje" rows="5"></textarea>
-
-        <button type="submit" class="btn-enviar" onclick="enviarFormulario(event)">Enviar</button>
-    </form>
-    <div id="mensaje-exito" style="display:none;">
-        <p>✓ Tu mensaje ha sido enviado correctamente. ¡Nos pondremos en contacto contigo pronto!</p>
-    </div>
-</section>
-
-<!-- copyright + redes sociales -->
-<footer class="footer">
-    <p>© 2026 Kalí Tattoo Studio — Todos los derechos reservados</p>
-    <div class="footer-redes">
-        <a href="https://www.instagram.com/kali_tattoo.studio/" target="_blank">
-            <img src="./img/logo-instagram.svg" alt="Instagram">
-        </a>
-        <a href="https://www.tiktok.com/@kali_tattoo.studio" target="_blank">
-            <img src="./img/logo-tiktok.svg" alt="TikTok">
-        </a>
-        <a href="https://wa.me/34622337513" target="_blank">
-            <img src="./img/logo-whatsapp.svg" alt="WhatsApp">
-        </a>
-    </div>
-</footer>
-
-<script>
-    function enviarFormulario(event) {
-        event.preventDefault();
-
-        const formulario = document.querySelector('form');
-        const mensaje = document.getElementById('mensaje-exito');
-
-        formulario.style.display = 'none';
-        mensaje.style.display = 'block';
-    }
-</script>
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Contacto - Kalí Tattoo Studio</title>
+		<link rel="icon" type="image/png" href="./img/logo-kali-fondo-negro.JPG">
+		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="./css/estilos.css">
+	</head>
+	<body>
+		<!-- logo + menú de navegación + botón de contacto -->
+		<header class="header">
+			<div class="logo">
+				<a href="./index.html">
+					<img src="./img/logo-kali.png" alt="Kalí Tattoo Studio">
+				</a>
+			</div>
+			<nav class="menu">
+				<a href="./index.html">Inicio</a>
+				<a href="./galeria.html">Galería</a>
+				<a href="./contacto.html" class="activo">Contacto</a>
+			</nav>
+			<div class="boton-contacto">
+				<a href="./contacto.html" class="btn-contacto">Contacto</a>
+				<a href="https://wa.me/34622337513" target="_blank">
+					<img src="./img/logo-whatsapp.svg" alt="WhatsApp">
+				</a>
+			</div>
+		</header>
+		<!-- título + descripción -->
+		<section class="contacto-titulo">
+			<h1>Contacto</h1>
+			<p>Rellena el formulario para solicitar información o pedir cita.</p>
+		</section>
+		<!-- formulario -->
+		<section class="formulario-contacto">
+			<form action="#" method="post">
+				<label for="nombre">Nombre completo</label>
+				<input type="text" id="nombre" name="nombre" required>
+				<label for="email">Correo electrónico</label>
+				<input type="email" id="email" name="email" required>
+				<label for="telefono">Teléfono</label>
+				<input type="tel" id="telefono" name="telefono">
+				<label for="tipo">Tipo de tatuaje</label>
+				<select id="tipo" name="tipo">
+					<option value="realismo">Realismo</option>
+					<option value="blackwork">Blackwork</option>
+					<option value="color">Color</option>
+					<option value="minimalista">Minimalista</option>
+				</select>
+				<p>
+					<b>
+						<i>Tamaño aproximado</i>
+					</b>
+				</p>
+				<div class="radio-grupo">
+					<div class="radio-opcion">
+						<input type="radio" id="tam-peq" name="tamano" value="pequeño" required>
+						<label for="tam-peq">Pequeño</label>
+					</div>
+					<div class="radio-opcion">
+						<input type="radio" id="tam-med" name="tamano" value="mediano">
+						<label for="tam-med">Mediano</label>
+					</div>
+					<div class="radio-opcion">
+						<input type="radio" id="tam-gra" name="tamano" value="grande">
+						<label for="tam-gra">Grande</label>
+					</div>
+				</div>
+				<label class="checkbox" for="acepta">
+					<input type="checkbox" id="acepta" name="acepta" required> Acepto la política de privacidad </label>
+				<label for="mensaje">Mensaje</label>
+				<textarea id="mensaje" name="mensaje" rows="5"></textarea>
+				<button type="submit" class="btn-enviar" onclick="enviarFormulario(event)">Enviar</button>
+			</form>
+			<div id="mensaje-exito" style="display:none;">
+				<p>✓ Tu mensaje ha sido enviado correctamente. ¡Nos pondremos en contacto contigo pronto!</p>
+			</div>
+		</section>
+		<!-- copyright + redes sociales -->
+		<footer class="footer">
+			<p>© 2026 Kalí Tattoo Studio — Todos los derechos reservados</p>
+			<div class="footer-redes">
+				<a href="https://www.instagram.com/kali_tattoo.studio/" target="_blank">
+					<img src="./img/logo-instagram.svg" alt="Instagram">
+				</a>
+				<a href="https://www.tiktok.com/@kali_tattoo.studio" target="_blank">
+					<img src="./img/logo-tiktok.svg" alt="TikTok">
+				</a>
+				<a href="https://wa.me/34622337513" target="_blank">
+					<img src="./img/logo-whatsapp.svg" alt="WhatsApp">
+				</a>
+			</div>
+		</footer>
+		<script>
+			function enviarFormulario(event) {
+				event.preventDefault();
+				const formulario = document.querySelector('form');
+				const mensaje = document.getElementById('mensaje-exito');
+				formulario.style.display = 'none';
+				mensaje.style.display = 'block';
+			}
+		</script>
+	</body>
 </html>
