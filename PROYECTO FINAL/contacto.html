@@ -49,11 +49,7 @@
 					<option value="color">Color</option>
 					<option value="minimalista">Minimalista</option>
 				</select>
-				<p>
-					<b>
-						<i>Tamaño aproximado</i>
-					</b>
-				</p>
+				<p><b><i>Tamaño aproximado</i></b></p>
 				<div class="radio-grupo">
 					<div class="radio-opcion">
 						<input type="radio" id="tam-peq" name="tamano" value="pequeño" required>
@@ -75,12 +71,12 @@
 				<button type="submit" class="btn-enviar" onclick="enviarFormulario(event)">Enviar</button>
 			</form>
 			<div id="mensaje-exito" style="display:none;">
-				<p>✓ Tu mensaje ha sido enviado correctamente. ¡Nos pondremos en contacto contigo pronto!</p>
+				<p>Tu mensaje ha sido enviado correctamente. ¡Nos pondremos en contacto contigo pronto!</p>
 			</div>
 		</section>
 		<!-- copyright + redes sociales -->
 		<footer class="footer">
-			<p>© 2026 Kalí Tattoo Studio — Todos los derechos reservados</p>
+			<p>&copy; 2026 Kalí Tattoo Studio — Todos los derechos reservados</p>
 			<div class="footer-redes">
 				<a href="https://www.instagram.com/kali_tattoo.studio/" target="_blank">
 					<img src="./img/logo-instagram.svg" alt="Instagram">
@@ -97,6 +93,10 @@
 			function enviarFormulario(event) {
 				event.preventDefault();
 				const formulario = document.querySelector('form');
+				if (!formulario.checkValidity()) {
+				formulario.reportValidity();
+				return;
+				}
 				const mensaje = document.getElementById('mensaje-exito');
 				formulario.style.display = 'none';
 				mensaje.style.display = 'block';
