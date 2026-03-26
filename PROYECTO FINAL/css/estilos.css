@@ -1,0 +1,382 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #222222;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+h2 {
+	font-size: 40px;
+    border-bottom: 2px solid #C9A86A;
+    color: #C9A86A;
+}
+
+p {
+	font-size: 25px;
+    color: #C9A86A;
+}
+
+button {
+	padding: 10px 20px;
+	border: 2px solid #C9A86A;
+	color: #C9A86A;
+	background-color: transparent;
+	text-decoration: none;
+	font-size: 16px;
+	border-radius: 4px;
+	align-self: center;
+}
+
+button:hover {
+	color: #222222;	
+	background-color: #C9A86A;
+	font-weight: bold;
+}
+
+.subtitulo {
+	color: #C9A86A;
+	font-size: 35px;
+}
+
+.header {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	align-items: center;
+	padding: 10px;
+	gap: 30%;
+	border-bottom: 3px solid #C9A86A;
+}
+
+.logo {
+	display: flex;
+}
+
+.logo img {
+	width: 200px;
+}
+
+.header-nav {
+	display: flex;
+}
+
+.header-nav a {
+	color: white;
+	text-decoration: none;
+	padding: 30px;
+	font-size: 20px;
+}
+
+.header-nav a:hover {
+	color: #C7A600;
+}
+
+.header-nav .activo {
+    color: #C9A86A;
+    font-weight: bold;
+    border-bottom: 2px solid #C9A86A;
+}
+
+.whatsapp-svg img {
+	width: 30px;
+	margin-right: 30px;
+}
+
+
+.sobre-mi {
+	display: flex;
+	align-items: center;
+	margin: 40px;
+	gap: 10%;
+}
+
+.sobre-texto {
+	display: flex;
+	flex-direction: column;
+	color: #C9A86A;
+	gap: 20px;
+	width: 50%;
+	margin-left: 10%;
+}
+
+.sobre-img {
+	display: flex;
+	width: 50%;
+}
+
+.sobre-img a {
+	display: flex;
+	justify-content: center;
+}
+
+.sobre-img img {
+	width: 50%;
+	border: 2px solid #C9A86A;
+	border-radius: 8px;
+	box-shadow: 0 10px 40px rgba(201, 168, 106, 0.5);
+}
+
+.sobre-img img:hover {
+	transform: scale(1.1);
+}
+
+.trabajos {
+	display: flex;
+	flex-direction: column;
+	margin: 40px;
+	color: #C9A86A;
+	gap: 30px;
+}
+
+
+.grid-galeria {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 3%;
+	padding-bottom: 8%;
+
+}
+
+.grid-galeria a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.grid-galeria img {
+	max-width: 90%;
+	border: 2px solid #C9A86A;
+	border-radius: 10px;
+
+}
+
+.grid-galeria img:hover {
+	box-shadow: 0 0 40px rgba(201, 168, 106, 0.5);
+	transform: scale(1.1);
+}
+
+.ubicacion {
+	color: #C9A86A;
+	gap: 30px;
+	margin: 40px;
+}
+
+.info {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.info-text {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.info-mapa iframe {
+	margin-top: 30px;
+	width: 500px;
+}
+
+.pie {
+	display: flex;
+	color: #C9A86A;
+	gap: 15px;
+	justify-content: space-around;
+	border-top: 3px solid #C9A86A;
+	padding: 40px;
+}
+
+.pie p {
+	font-size: 15px;
+
+}
+
+.pie-arriba a {
+	color: white;
+}
+
+.pie-arriba a:hover {
+	color: blueviolet;
+}
+
+.pie-redes img {
+	width: 25px;
+}
+
+.imagenes-insta {
+	display: flex;
+	flex-direction: column;
+	margin: 40px;
+	color: #C9A86A;
+	gap: 30px;
+	padding-bottom: 20%;
+}
+
+.grid-insta {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-items: center;
+	gap: 1%;
+	width: 100%;
+}
+
+.grid-insta a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.grid-insta img {
+	display: block;
+	width: 90%;
+	border: 2px solid #C9A86A;
+	border-radius: 10px;
+}
+
+.grid-insta img:hover {
+	box-shadow: 0 0 40px rgba(201, 168, 106, 0.5);
+}
+
+.mas-trabajos {
+	display: flex;
+	margin: 40px;
+	padding-bottom: 40px;
+	gap: 30px;
+	justify-content: center;
+	align-items: center;
+}
+
+.contacto {
+	margin: 40px;
+}
+
+.formulario {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	justify-content: center;
+	padding-top: 5%;
+	color: #C9A86A;
+	font-size: 25px;
+	gap: 15px;
+	width: 45%;
+	margin: 0 auto;
+}
+
+.formulario-radio {
+	display: flex;
+	font-size: 15px;
+	gap: 10px;
+}
+
+.formulario-checkbox {
+	display: flex;
+	padding-top: 25px;
+	font-size: 15px;
+}
+
+.formulario input {
+	background-color: black;
+	padding: 5px;
+	border-radius: 8px;
+	border: 1px solid grey;
+}
+
+.formulario select {
+	color: #C9A86A;
+	background-color: black;
+	padding: 5px;
+	border-radius: 8px;
+	border: 1px solid grey;	
+}
+
+.formulario-boton {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@media (max-width: 768px) {
+
+	.header {
+		flex-direction: column;
+		gap: 40px;
+		padding-bottom: 40px;
+	}
+
+	.whatsapp-svg {
+		display: none;
+	}
+
+	.sobre-mi {
+		flex-direction: column;
+	}
+
+	.sobre-texto {
+		width: 100%;
+	}
+
+	.sobre-img {
+		width: 100%;
+		padding-top: 40px;
+	}
+
+	.sobre-img img {
+		width: 100%;
+	}
+
+	.trabajos {
+		flex-direction: column;
+	}
+
+	.grid-galeria {
+		grid-template-columns: repeat(1, 1fr);
+		gap: 20px;
+	}
+
+	.ubicacion {
+		flex-direction: column;
+	}
+
+	.info {
+		flex-direction: column;
+		padding-top: 40px;
+	}
+
+	.info-mapa iframe {
+		width: 100%;
+	}
+
+	.pie {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.grid-insta {
+		grid-template-columns: repeat(1, 1fr);
+		gap: 20px;
+	}
+
+	.mas-trabajos {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.formulario {
+		width: 100%;
+	}
+}
