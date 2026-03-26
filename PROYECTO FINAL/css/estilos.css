@@ -388,4 +388,5 @@ button:hover {
     margin: 40px;
     padding-top: 40px;
     font-size: 15px;
+	text-decoration: underline;
 }
