@@ -380,3 +380,12 @@ button:hover {
 		width: 100%;
 	}
 }
+
+.frase-tatuaje {
+    font-style: italic;
+    text-align: center;
+    color: #C9A86A;
+    margin: 40px;
+    padding-top: 40px;
+    font-size: 15px;
+}
