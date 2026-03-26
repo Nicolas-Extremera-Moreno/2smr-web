@@ -24,6 +24,7 @@
 	<div class="contacto">
 		<h2>Contacto</h2><br>
 		<p>Rellena este formulario y nos pondremos en contacto contigo</p>
+		<p class="frase-tatuaje"></p>
 		<form action="#" method="post" class="formulario">
 			<label for="nombre">Nombre completo</label>
 			<input type="text" name="nombre" id="nombre" required>
@@ -78,5 +79,18 @@
 			<a href="https://wa.me/34622337513" target="_blank"><img src="./img/logo-whatsapp.svg" alt="whatsapp"></a>
 		</div>
 	</footer>
+	<script>
+	const frases = [
+	    "Tu piel es el lienzo. Tu historia, la obra.",
+	    "Un buen tatuaje dura para siempre. Elige bien.",
+	    "El arte no se cuelga en paredes. Se lleva en la piel.",
+	    "Cada tatuaje es una cicatriz con significado.",
+	    "Lo que no te atreves a decir, tatuátelo.",
+	    "La tinta no miente."
+	];
+
+	const indiceAleatorio = Math.floor(Math.random() * frases.length);
+	document.querySelector(".frase-tatuaje").textContent = frases[indiceAleatorio];
+	</script>
 </body>
 </html>
