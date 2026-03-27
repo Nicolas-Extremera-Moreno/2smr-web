@@ -1,0 +1,40 @@
+        body {
+            background-color:blanchedalmond;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            letter-spacing: 10px;
+            font-size: 300%;
+            font-family: 'Audiowide', Arial, Helvetica, sans-serif;
+        }
+
+        h2 {
+            clear: both;
+            background-color: gray;
+            color: white;
+            font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+        }
+
+        p {
+            text-indent: 1rem;
+            margin-left: 20px;
+            margin-right: 5px;
+        }
+
+        img {
+            float: right;
+            padding-right: 20px;
+            padding-bottom: 5px;
+        }
+
+        .spanrojo {
+            color: violet;
+        }
+
+        .fondoblanco {
+            background-color:cadetblue;
+            text-emphasis-style: 1;
+        }

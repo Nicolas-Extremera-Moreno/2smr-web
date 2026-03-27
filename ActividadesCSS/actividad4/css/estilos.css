@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(171, 255, 237, 0.678);
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: blueviolet;
+    font-family: "Audiowide", sans-serif;
+}
+
+/* Selector del id */
+.destacado {
+    background-color: brown;
+    border: 2px dashed yellow;
+    padding: 10px;
+}
