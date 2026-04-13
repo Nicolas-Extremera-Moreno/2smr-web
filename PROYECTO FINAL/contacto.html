@@ -9,6 +9,7 @@
 	<link rel="icon" type="image/png" href="./img/logo-kali-fondo-negro.JPG">
 </head>
 <body>
+	<!-- CONTENEDOR HEADER -->
 	<header class="header" id="arriba">
 		<div class="logo">
 			<a href="./inicio.html"><img src="./img/logo-kali.png" alt="logo-kali"></a>
@@ -20,7 +21,7 @@
 		</nav>
 		<a href="https://wa.me/34622337513" target="_blank" class="whatsapp-svg"><img src="./img/logo-whatsapp.svg"></a>
 	</header>
-
+	<!-- TEXTO Y FORMULARIO -->
 	<div class="contacto">
 		<h2>Contacto</h2><br>
 		<p>Rellena este formulario y nos pondremos en contacto contigo</p>
@@ -66,7 +67,7 @@
 
 		</form>
 	</div>
-
+	<!-- PIE DE PÁGINA -->
 	<footer class="pie">
 		<div class="pie-arriba">
 			<p>Volver <a href="#arriba">arriba</a></p>
@@ -79,6 +80,7 @@
 			<a href="https://wa.me/34622337513" target="_blank"><img src="./img/logo-whatsapp.svg" alt="whatsapp"></a>
 		</div>
 	</footer>
+	<!-- JAVASCRIPT -->
 	<script>
 	const frases = [
 	    "Tu piel es el lienzo. Tu historia, la obra.",
@@ -88,7 +90,6 @@
 	    "Lo que no te atreves a decir, tatuátelo.",
 	    "La tinta no miente."
 	];
-
 	const indiceAleatorio = Math.floor(Math.random() * frases.length);
 	document.querySelector(".frase-tatuaje").textContent = frases[indiceAleatorio];
 	</script>
