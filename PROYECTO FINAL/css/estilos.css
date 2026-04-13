@@ -4,6 +4,7 @@
 	box-sizing: border-box;
 }
 
+/* PRINCIPALES */
 body {
 	background-color: #222222;
     font-family: 'Oswald', sans-serif;
@@ -43,6 +44,7 @@ button:hover {
 	font-size: 35px;
 }
 
+/* HEADER */
 .header {
 	display: flex;
 	justify-content: center;
@@ -87,7 +89,7 @@ button:hover {
 	margin-right: 30px;
 }
 
-
+/* SOBRE KALÍ TATTOO STUDIO */
 .sobre-mi {
 	display: flex;
 	align-items: center;
@@ -125,6 +127,7 @@ button:hover {
 	transform: scale(1.1);
 }
 
+/* MAIN */
 .trabajos {
 	display: flex;
 	flex-direction: column;
@@ -162,6 +165,7 @@ button:hover {
 	transform: scale(1.1);
 }
 
+/* HORARIO Y MAPA */
 .ubicacion {
 	color: #C9A86A;
 	gap: 30px;
@@ -185,6 +189,7 @@ button:hover {
 	width: 500px;
 }
 
+/* PIE DE PÁGINA */
 .pie {
 	display: flex;
 	color: #C9A86A;
@@ -211,6 +216,7 @@ button:hover {
 	width: 25px;
 }
 
+/* MAIN DE GALERIA.HTML */
 .imagenes-insta {
 	display: flex;
 	flex-direction: column;
@@ -247,6 +253,7 @@ button:hover {
 	box-shadow: 0 0 40px rgba(201, 168, 106, 0.5);
 }
 
+/* TEXTO + BOTÓN A INSTAGRAM */
 .mas-trabajos {
 	display: flex;
 	margin: 40px;
@@ -256,6 +263,7 @@ button:hover {
 	align-items: center;
 }
 
+/* PÁGINA GALERIA.HTML TEXTO Y FORMULARIO */
 .contacto {
 	margin: 40px;
 }
@@ -306,6 +314,7 @@ button:hover {
 	justify-content: center;
 }
 
+/* RESPONSIVE */
 @media (max-width: 768px) {
 
 	.header {
@@ -381,6 +390,7 @@ button:hover {
 	}
 }
 
+/* JAVASCRIPT */
 .frase-tatuaje {
     font-style: italic;
     text-align: center;
