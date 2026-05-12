@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="icon" type="image/png" href="img/logo-softbase-solutions.png">
+	<!-- CÓDIGO EMBEBIDO PARA FUENTES DE GOOGLE FONTS -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Saira+Stencil:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<title>SoftBase Solutions</title>
+</head>
+<body>
+<!-- PRIMER CONTENEDOR -->
+<div class="contenedor-principal" id="inicio">
+	<div class="superior-principal">
+		<a href="#inicio" class="logo"> <img src="img/logo-softbase-solutions.png"> </a>
+		<nav>
+			<ul>
+				<a href="#inicio"><li>Inicio</li></a>
+				<a href="#servicios"><li>Servicios</li></a>
+				<a href="#contacto"><li>Contacto</li></a>
+			</ul>
+		</nav>
+	</div>
+	<div class="inferior-principal">
+		<h1>Servicios TIC para <span>tu empresa</span></h1>
+		<p>En Softbase Solutions instalamos, configuramos y mantenemos los sistemas informáticos que necesita tu negocio.</p>
+		<a href="#servicios"><button>Ver nuestros servicios</button></a>
+	</div>
+</div>
+
+<!-- SEGUNDO CONTENEDOR -->
+<main>
+	<h2 id="servicios">Nuestros servicios</h2>
+	<p>Ofrecemos soluciones integrales de software e infraestructura para pymes, autónomos y centros educativos.</p>
+	<div class="tarjetas-servicios">
+		<div class="tarjetas">
+			<img src="img/windows-configuracion.png" alt="Dibujo de persona configurando un ordenador por primera vez">
+			<h4>Instalación de Sistemas Operativos</h4>
+			<p>Instalación y configuración de Windows, Linux y macOS. Incluye drivers, actualizaciones y configuración inicial del equipo.</p>
+			<p class="precio">Desde <strong>49€</strong> / equipo</p>
+		</div>
+		<div class="tarjetas">
+			<img src="img/software-configuracion.png" alt="Personas de juguete con un cable de red">
+			<h4>Configuración de Software</h4>
+			<p>Antivirus, suite ofimática y herramientas de productividad. Tu equipo listo para trabajar desde el primer día.</p>
+			<p class="precio">Desde <strong>35€</strong> / equipo</p>
+		</div>
+		<div class="tarjetas">
+			<img src="img/redes-instalacion.png" alt="Configuración de un router">
+			<h4>Redes y Conectividad</h4>
+			<p>Diseño e instalación de redes LAN y WiFi para oficinas. Configuración de routers, switches y VLANs.</p>
+			<p class="precio">Desde <strong>200€</strong> / proyecto</p>
+		</div>
+		<div class="tarjetas">
+			<img src="img/firewall-seguridad.png" alt="Ordenadores protegidos por un muro (firewall)">
+			<h4>Seguridad y Firewall</h4>
+			<p>Implementación de firewall y políticas de seguridad para proteger la red de tu empresa frente a amenazas externas.</p>
+			<p class="precio">Desde <strong>150€</strong> / instalación</p>
+		</div>
+		<div class="tarjetas">
+			<img src="img/aula-ordenadores.png" alt="Aula con ordenadores configurados y listos para empezar a trabajar.">
+			<h4>Despliegue Masivo</h4>
+			<p>Instalación y configuración de Windows, Linux y macOS. Incluye drivers, actualizaciones y configuración inicial del equipo.</p>
+			<p class="precio"><strong>Solicita el presupuesto</strong></p>
+		</div>
+		<div class="tarjetas">
+			<img src="img/soporte-online.png" alt="Dibujo de mujer preparada para dar soporte online">
+			<h4>Soporte y Mantenimiento</h4>
+			<p>Planes de mantenimiento mensual con soporte remoto y presencial. Resolución de incidencias en menos de 24 horas.</p>
+			<p class="precio">Desde <strong>29€</strong> / mes</p>
+		</div>
+	</div>
+</main>
+
+<!-- TERCER CONTENEDOR -->
+<div class="contacto-contenedor">
+	<h2 id="contacto">Contacto</h2>
+	<p class="pregunta">¿Tienes alguna pregunta o quieres solicitar un presupuesto? Escríbenos.</p>
+
+	<div class="info">
+		<div class="info-tarjeta">
+			<img src="img/email.svg" alt="Emoticono email.">
+			<p class="titulo-tarjeta">EMAIL</p>
+			<p>exmoni_aliesma24@iesmedinaazahara.es</p>
+		</div>
+		<div class="info-tarjeta">
+			<img src="img/telefono.svg" alt="Emoticono teléfono.">
+			<p class="titulo-tarjeta">TELÉFONO</p>
+			<p>+34 634777452</p>
+		</div>
+		<div class="info-tarjeta">
+			<img src="img/direccion.svg" alt="Emoticono de ubicación.">
+			<p class="titulo-tarjeta">DIRECCIÓN</p>
+			<p>IES Medina Azahara, Córdoba</p>
+		</div>
+	</div>
+	<div>
+		<div class="info-tarjeta">
+			<img src="img/horario.svg" alt="Emoticono de calendario.">
+			<p class="titulo-tarjeta">HORARIO</p>
+			<p>Lunes a viernes de 9:00 - 18:00</p>
+		</div>
+	</div>
+	<div class="formulario">
+		<form method="post">
+			<label for="nombre">Nombre</label>
+			<input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre completo aquí." required>
+			<label for="email">Email</label>
+			<input type="email" name="email" id="email" placeholder="ejemplo@ejemplo.com" required>
+			<label for="selector-servicios">Servicio a elegir</label>
+			<select name="selector-servicios" id="selector-servicios">
+				<option>Instalación de Sistemas Operativos</option>
+				<option>Configuración de Software</option>
+				<option>Redes y Conectividad</option>
+				<option>Seguridad y Firewall</option>
+				<option>Despliegue Masivo</option>
+				<option>Soporte y Mantenimiento</option>
+				<option>Otros</option>
+			</select>
+			<label for="mensaje">Más información</label>
+			<textarea placeholder="Si necesita informarnos de algo más, escribe aquí."></textarea>
+			<button type="submit">Enviar</button>
+		</form>
+	</div>
+</div>
+
+<!-- PIE DE PÁGINA -->
+<footer>
+	<p>Volver <a href="#inicio">arriba</a></p>
+	<p>&copy; 2026 Nicolás Extremera Moreno - Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>

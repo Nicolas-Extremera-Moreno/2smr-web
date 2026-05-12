@@ -1,0 +1,310 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "saira stencil", sans-serif;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 40px;
+}
+
+h2 {
+  color: #1A3A5C;
+  font-size: 30px;
+}
+
+h4 {
+  color: #1A3A5C;
+  font-size: 18px;
+}
+
+span {
+  color: #00aaff;
+}
+
+strong {
+  color: #00aaff;
+
+}
+
+/* PRIMER CONTENEDOR */
+.contenedor-principal {
+  display: flex;
+  flex-direction: column;
+  background-color: #1A3A5C;
+  padding: 15px 50px 30px;
+}
+
+.superior-principal {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  color: #ffffff;
+}
+
+.superior-principal nav {
+  align-content: center;
+}
+
+.superior-principal nav ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.superior-principal nav ul a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.superior-principal nav ul a li {
+  list-style: none;
+  padding: 10px;
+}
+
+.superior-principal nav ul a li:hover {
+  color: #00aaff;
+}
+
+.logo img {
+  max-width: 150px;
+}
+
+.inferior-principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inferior-principal {
+  display: flex;
+  flex-direction: column;
+}
+
+.inferior-principal p {
+  color: #cccccc;
+  padding-bottom: 20px;
+}
+
+.inferior-principal button {
+  font-family: "saira stencil", sans-serif;
+  background-color: #00aaff;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 8px;
+  border-color: #1A3A5C;
+  padding: 20px;
+}
+
+.inferior-principal button:hover {
+  background-color: #0282c2;
+  transform: scale(1.1); /* AÑADE UNA PEQUEÑA ANIMACIÓN DE ZOOM CUANDO EL RATÓN ESTÁ ENCIMA */
+}
+
+/* SEGUNDO CONTENEDOR */
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+
+main p {
+  color: #888888;
+  padding-bottom: 30px;
+}
+
+.tarjetas-servicios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  align-items: stretch;
+  gap: 50px;
+}
+
+.tarjetas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 2px solid #1A3A5C;
+  background-color: #B7C1CC;
+}
+
+.tarjetas:hover {
+  transform: scale(1.15);
+}
+
+.tarjetas img {
+  max-width: 300px;
+  border-radius: 8px;
+}
+
+.tarjetas p {
+  color: #000000;
+  padding: 0;
+}
+
+.tarjetas .precio {
+  color: #1A3A5C;
+}
+
+/* TERCER CONTENEDOR */
+.contacto-contenedor {
+  padding: 60px;
+  background-color: #EEF2F7;
+}
+
+.pregunta {
+  color: #888888;
+  padding-bottom: 30px;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 20px;
+  justify-content: center;
+}
+
+.info-tarjeta {
+  justify-items: center;
+  text-align: center;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 50px;
+}
+
+.info-tarjeta img {
+  max-width: 35px;
+}
+
+.info-tarjeta p {
+  color: #1A3A5C;
+  font-weight: bold;
+}
+
+.info-tarjeta .titulo-tarjeta {
+  color: #888888;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.formulario {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.formulario button {
+  font-family: "saira stencil", sans-serif;
+  width: 20%;
+  background-color: #00aaff;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 8px;
+  border-color: #1A3A5C;
+  padding: 20px;
+  margin-top: 25px;
+}
+
+.formulario button:hover {
+  background-color: #0282c2;
+  transform: scale(1.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-top: 20px;
+}
+
+label, input, select, textarea {
+  font-family: "saira stencil", sans-serif;
+  width: 100%;
+}
+
+label {
+  font-size: 13px;
+  color: #000000;
+  text-align: left;
+  margin-top: 15px;
+}
+
+input {
+  padding: 18px;
+}
+
+select {
+  padding: 12px;
+}
+
+textarea {
+  padding: 20px;
+}
+
+/* PIE DE PÁGINA */
+footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+  color: #ffffff;
+  background-color: #111F2E;
+}
+
+footer a {
+  color: #00aaff;
+}
+
+footer a:hover {
+  color: #0282c2;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+.contenedor-principal {
+  padding: 15px 20px;
+}
+
+  .superior-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tarjetas-servicios {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .info {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .formulario button {
+    width: 100%;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
